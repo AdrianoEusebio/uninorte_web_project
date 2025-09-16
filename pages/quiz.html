@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz — Guardiões da Amazônia</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="../index.html">
+      <img src="../img/logo.png" alt="Logo" />
+      <span>Guardiões da Amazônia</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="biodiversidade.html">Biodiversidade</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="participe.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Quiz da Biodiversidade</h2>
+    <p>Responda às perguntas e clique em "Ver resultado".</p>
+
+    <form class="quiz" id="quiz-form">
+      <div class="question">
+        <p>1) Qual é o maior felino das Américas?</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a"> Leopardo</label>
+          <label><input type="radio" name="q1" value="b"> Onça-pintada</label>
+          <label><input type="radio" name="q1" value="c"> Puma</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>2) Qual planta aquática é símbolo da Amazônia?</p>
+        <div class="options">
+          <label><input type="radio" name="q2" value="a"> Violeta</label>
+          <label><input type="radio" name="q2" value="b"> Vitória-régia</label>
+          <label><input type="radio" name="q2" value="c"> Samambaia</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>3) Em qual tipo de ambiente vive o boto-cor-de-rosa?</p>
+        <div class="options">
+          <label><input type="radio" name="q3" value="a"> No deserto</label>
+          <label><input type="radio" name="q3" value="b"> Em florestas</label>
+          <label><input type="radio" name="q3" value="c"> Em rios</label>
+        </div>
+      </div>
+
+      <button type="submit">Ver resultado</button>
+      <div id="result" class="result" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Guardiões da Amazônia
+  </footer>
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
